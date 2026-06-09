@@ -1,0 +1,29 @@
+feature,importance
+football_engagement_score,0.23572562653514026
+social_media_engagement,0.1381134442822851
+potential_net_revenue_usd,0.11415075946049806
+ticket_search_count,0.07895244308558863
+distance_to_host_city_km,0.07882401295180154
+visa_required,0.05232919080951063
+income_level_Low,0.04424482431223212
+estimated_trip_cost,0.038500024429648776
+flight_search_count,0.03300961879377861
+country_region_North America,0.03288070742488839
+income_level_High,0.02563339389901819
+favorite_team_qualified,0.0165776365479692
+campaign_cost_usd,0.016211064885300927
+previous_worldcup_attendance,0.01568073959021952
+hotel_search_count,0.015502949083438217
+days_until_match,0.015294992784233435
+age,0.012960083911910421
+match_importance_Group,0.010186556257192012
+income_level_Medium,0.010145545383140404
+country_region_Asia,0.0036197010734115307
+country_region_South America,0.002032156221914271
+country_region_Europe,0.002009404737728914
+match_importance_Quarter-final,0.0018388772511881669
+match_importance_Final,0.0017366215777205381
+match_importance_Round of 16,0.0014744760648340168
+match_importance_Semi-final,0.0011086431316054551
+country_region_Africa,0.0010287554559902268
+country_region_Oceania,0.0002277500578126312

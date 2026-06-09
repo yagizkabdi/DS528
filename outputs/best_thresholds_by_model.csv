@@ -1,0 +1,4 @@
+Model,Threshold,Accuracy,Precision,Recall,F1,TP,FP,FN,TN,TP_impact_usd,FP_impact_usd,FN_impact_usd,Net_business_impact_usd
+Logistic Regression,0.15,0.4308,0.2941,0.9738,0.4518,2932,7036,79,2453,314414.56,-56386.09,-6044.05,251984.42
+Random Forest,0.15,0.3725,0.2751,0.9821,0.4299,2957,7790,54,1699,316447.51,-62418.67,-3798.53,250230.31
+Gradient Boosting,0.1,0.5206,0.3279,0.9429,0.4865,2839,5820,172,3669,307228.16,-46751.64,-13948.96,246527.56
