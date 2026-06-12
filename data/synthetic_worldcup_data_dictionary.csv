@@ -1,22 +1,26 @@
 column,description
 fan_id,Unique synthetic fan identifier
-age,Fan age
-country_region,Fan's region of residence
-income_level,Synthetic income category
-distance_to_host_city_km,Approximate distance from fan location to a North American host city
-favorite_team_qualified,Whether the fan's favorite team qualified for the tournament
-previous_worldcup_attendance,Whether the fan previously attended a World Cup
-football_engagement_score,General football interest score from 0 to 100
-social_media_engagement,Engagement with World Cup-related social media content from 0 to 100
-ticket_search_count,Number of recent ticket-related searches
-flight_search_count,Number of recent flight-related searches
-hotel_search_count,Number of recent hotel-related searches
+age,Fan age (18–80)
+country,Fan's country of residence (real country)
+country_region,Fan's geographic region
+income_level,"Income category (Low/Medium/High, derived from GDP/capita)"
+gdp_per_capita_usd,Real GDP per capita of fan's country
+distance_to_host_city_km,Haversine distance from country centroid to nearest 2026 host city
+nearest_host_city,Nearest official 2026 World Cup host city
+nearest_host_country,Country of the nearest host city (USA/Canada/Mexico)
+favorite_team_qualified,Whether fan's favorite team (national) qualified (1=Yes)
+previous_worldcup_attendance,Whether fan previously attended a World Cup (1=Yes)
+football_engagement_score,General football interest score (0–100)
+social_media_engagement,World Cup social media engagement (0–100)
+ticket_search_count,Recent ticket-related search count
+flight_search_count,Recent flight-related search count
+hotel_search_count,Recent hotel-related search count
 estimated_trip_cost,Estimated total trip cost in USD
-visa_required,Whether visa is required for the fan
-days_until_match,Number of days until the match
-match_importance,Importance level of the match
-campaign_cost_usd,Estimated campaign targeting cost per person in USD
-potential_net_revenue_usd,"Estimated potential net revenue if this fan converts, in USD"
-expected_value_usd,Expected value based on synthetic travel probability minus campaign cost
-travel_probability_synthetic,Hidden synthetic probability used to generate the target; should not be used as a model feature
-will_travel,"Target variable: 1 if fan is likely to travel/interested, 0 otherwise"
+visa_required,"Whether visa is required for host country entry (1=Yes, real policy)"
+days_until_match,Days until the target match
+match_importance,Match stage (Group/Round of 32/Round of 16/Quarter-final/Semi-final/Final)
+campaign_cost_usd,Estimated marketing campaign cost per person (USD)
+potential_net_revenue_usd,Estimated potential net revenue if fan converts (USD)
+expected_value_usd,travel_probability * potential_revenue - campaign_cost
+travel_probability_synthetic,Hidden synthetic probability — NOT a model feature (data leakage)
+will_travel,"Target: 1 if fan travels/interested, 0 otherwise"

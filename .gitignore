@@ -8,9 +8,11 @@ __pycache__/
 .venv/
 venv/
 env/
+.env
 
 # Jupyter
 .ipynb_checkpoints/
+*.ipynb_checkpoints
 
 # OS files
 .DS_Store
@@ -27,3 +29,7 @@ Thumbs.db
 # Large model artifacts
 *.pkl
 *.joblib
+
+# Project-specific
+outputs/*.png
+outputs/*.csv
